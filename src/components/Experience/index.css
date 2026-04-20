@@ -1,0 +1,79 @@
+.experience-section {
+  background-color: #112240;
+  border: 1px solid #233554;
+  border-radius: 6px;
+  padding: 12px;
+  margin-top: 20px;
+}
+
+.experience-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.experience-title {
+  color: #e6f1ff;
+  font-size: 20px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.experience-number {
+  color: #64ffda;
+  font-family: monospace;
+  font-weight: bold;
+  margin-right: 6px;
+}
+
+.experience-line {
+  flex: 1;
+  height: 1px;
+  background-color: #233554;
+  border: none;
+}
+
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.experience-item {
+  background-color: #0b1f36;
+  border: 1px solid #1d3557;
+  border-radius: 6px;
+  padding: 10px;
+  transition: 0.2s;
+}
+
+.experience-item:hover {
+  border-color: #64ffda;
+}
+
+.role-title {
+  color: #64ffda;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.experience-duration {
+  color: #60a5fa;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.experience-points {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.experience-points li {
+  color: #cbd5f5;
+  font-size: 13px;
+  margin-bottom: 4px;
+  line-height: 1.4;
+}

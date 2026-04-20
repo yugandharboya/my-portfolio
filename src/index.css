@@ -1,0 +1,26 @@
+:root {
+  --text-primary: #8892b0;
+  --header-primary: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body,
+#root {
+  height: 100%;
+}
+p {
+  color: var(--text-primary);
+}
+body {
+  font-family: system-ui, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+html {
+  scroll-behavior: smooth;
+}
