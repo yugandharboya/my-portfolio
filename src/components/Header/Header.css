@@ -119,8 +119,6 @@
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   font-size: 0.75rem;
   letter-spacing: 0.025em;
-  transition: all 0.2s ease;
-  /* min-height: 44px; */
   display: flex;
   align-items: center;
   justify-content: center;

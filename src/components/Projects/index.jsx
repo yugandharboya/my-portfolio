@@ -1,5 +1,5 @@
 import projects from "../../Data/projects";
-import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import { FaExternalLinkAlt, FaGithub, FaStar } from "react-icons/fa";
 import "./Projects.css";
 
 const ProjectsCard = () => {
@@ -7,7 +7,7 @@ const ProjectsCard = () => {
     <section className="projects-section" id="projects">
       <div className="section-header-row">
         <h2 className="section-heading-title text-fluid-section">
-          <span className="section-heading-number">03.</span> Featured Projects
+          <span className="section-heading-number">03.</span> Featured Projects & Experience
         </h2>
         <div className="section-heading-line" />
       </div>
@@ -16,9 +16,15 @@ const ProjectsCard = () => {
         {projects.map((project) => (
           <div
             key={project.title}
-            className="project-card"
+            className={`project-card ${project.featured ? "featured-card" : ""}`}
           >
             <div className="project-card-body">
+              {project.featured && (
+                <span className="featured-badge">
+                  <FaStar /> Featured Instructor Program
+                </span>
+              )}
+
               <div className="project-card-header">
                 <h3 className="project-title text-fluid-card-title">
                   {project.title}
@@ -55,7 +61,7 @@ const ProjectsCard = () => {
 
               {project.features && project.features.length > 0 && (
                 <div className="project-features-container">
-                  <p className="project-features-label">Key Features:</p>
+                  <p className="project-features-label">Key Features / Highlights:</p>
                   <ul className="project-features-list">
                     {project.features.map((feature, idx) => (
                       <li key={idx} className="project-feature-item">

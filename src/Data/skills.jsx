@@ -16,12 +16,24 @@ import {
   SiOpenai,
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
-import { FaTools, FaBrain, FaRobot, FaChalkboardTeacher, FaDatabase, FaCogs } from "react-icons/fa";
+import {
+  FaTools,
+  FaBrain,
+  FaRobot,
+  FaChalkboardTeacher,
+  FaDatabase,
+  FaCogs,
+  FaCode,
+  FaLaptopCode,
+  FaServer,
+  FaRocket,
+} from "react-icons/fa";
 import { TbWorldWww } from "react-icons/tb";
 
 const skillsList = [
   {
     title: "Generative AI & Teaching",
+    categoryIcon: <FaBrain />,
     items: [
       { icon: <FaBrain />, name: "Prompt Engineering" },
       { icon: <FaRobot />, name: "LLM Fundamentals (GPT, Claude, Gemini)" },
@@ -33,6 +45,7 @@ const skillsList = [
   },
   {
     title: "Languages",
+    categoryIcon: <FaCode />,
     items: [
       { icon: <SiJavascript />, name: "JavaScript (ES6+)" },
       { icon: <SiPython />, name: "Python (Basics)" },
@@ -40,6 +53,7 @@ const skillsList = [
   },
   {
     title: "Frontend",
+    categoryIcon: <FaLaptopCode />,
     items: [
       { icon: <SiHtml5 />, name: "HTML5" },
       { icon: <SiCss3 />, name: "CSS3" },
@@ -49,6 +63,7 @@ const skillsList = [
   },
   {
     title: "Backend",
+    categoryIcon: <FaServer />,
     items: [
       { icon: <SiNodedotjs />, name: "Node.js" },
       { icon: <SiExpress />, name: "Express.js" },
@@ -58,10 +73,12 @@ const skillsList = [
   },
   {
     title: "Database",
+    categoryIcon: <FaDatabase />,
     items: [{ icon: <SiMysql />, name: "SQL" }],
   },
   {
     title: "Tools",
+    categoryIcon: <FaTools />,
     items: [
       { icon: <SiGit />, name: "Git" },
       { icon: <SiGithub />, name: "GitHub" },
@@ -71,6 +88,7 @@ const skillsList = [
   },
   {
     title: "Deployment",
+    categoryIcon: <TbWorldWww />,
     items: [
       { icon: <SiVercel />, name: "Vercel" },
       { icon: <TbWorldWww />, name: "Render" },
@@ -79,6 +97,7 @@ const skillsList = [
   },
   {
     title: "Learning",
+    categoryIcon: <FaRocket />,
     items: [
       { icon: <SiMongodb />, name: "MongoDB" },
       { icon: <SiDocker />, name: "Docker" },

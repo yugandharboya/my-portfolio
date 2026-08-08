@@ -40,7 +40,7 @@ const HeroCard = () => {
             Hi, my name is
           </p>
           <span className="hero-hire-badge">
-            Available for Hire 🚀
+            Gen AI Instructor @ NextWave
           </span>
         </div>
       </div>
@@ -59,17 +59,17 @@ const HeroCard = () => {
 
       <div className="hero-actions-group">
         <button
-          onClick={scrollToProjects}
+          onClick={scrollToContact}
           className="hero-btn-primary"
         >
-          Check out my work!
+          Get In Touch
         </button>
 
         <button
-          onClick={scrollToContact}
+          onClick={scrollToProjects}
           className="hero-btn-secondary"
         >
-          Get In Touch
+          Check out my work!
         </button>
       </div>
     </section>

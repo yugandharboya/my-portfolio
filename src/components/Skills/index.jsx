@@ -17,9 +17,16 @@ const SkillsCard = () => {
             key={group.title || index}
             className="skill-card"
           >
-            <h3 className="skill-category-title">
-              {group.title}
-            </h3>
+            <div className="skill-header-row">
+              {group.categoryIcon && (
+                <div className="skill-category-icon-box">
+                  {group.categoryIcon}
+                </div>
+              )}
+              <h3 className="skill-category-title">
+                {group.title}
+              </h3>
+            </div>
 
             <div className="skill-items-list">
               {group.items.map((item, subIndex) => (
@@ -30,7 +37,7 @@ const SkillsCard = () => {
                   <span className="skill-item-icon">
                     {item.icon}
                   </span>
-                  <span className="skill-item-name" title={item.name}>
+                  <span className="skill-item-name">
                     {item.name}
                   </span>
                 </div>

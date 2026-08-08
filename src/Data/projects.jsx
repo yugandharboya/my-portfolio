@@ -1,5 +1,17 @@
 const projects = [
   {
+    title: "Gen AI Curriculum & Student Mentorship",
+    description:
+      "Comprehensive Generative AI training program designed for engineering students, covering LLM fundamentals, Prompt Engineering, RAG architecture, and building AI-powered web applications.",
+    tech: ["Generative AI", "LLMs", "LangChain", "Prompt Engineering", "RAG", "React.js", "Python"],
+    featured: true,
+    features: [
+      "Trained 500+ engineering students in Generative AI tools, prompt engineering, and LLM application development",
+      "Developed hands-on curriculum and project templates combining MERN stack with OpenAI APIs and Vector DBs",
+      "Mentored student teams in building production-ready AI SaaS projects and industry-standard portfolios",
+    ],
+  },
+  {
     title: "PestGuard Pro",
     description:
       "A full-stack pest control management system featuring automated WhatsApp follow-up reminders, customer directory, service history tracking, and analytics.",
@@ -27,7 +39,6 @@ const projects = [
       "Fast-loading pages with optimized performance",
     ],
   },
-
   {
     title: "Personal Expense Tracker",
     description:
@@ -42,7 +53,6 @@ const projects = [
       "Secure backend with RESTful APIs and database integration",
     ],
   },
-
   {
     title: "Human Resource Management System",
     description:
@@ -57,7 +67,6 @@ const projects = [
       "Scalable backend architecture for multi-user operations",
     ],
   },
-
   {
     title: "E-commerce Web Application",
     description:
