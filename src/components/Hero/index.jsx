@@ -31,8 +31,11 @@ const HeroCard = () => {
         <div className="hero-avatar-container">
           <img
             src="/myProfile.JPG"
-            alt="Yugandhar Boya"
+            alt="Yugandhar Boya Profile Photo"
             className="hero-avatar-img"
+            loading="eager"
+            width="112"
+            height="112"
           />
         </div>
         <div className="hero-greeting-box">
