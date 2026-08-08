@@ -7,12 +7,10 @@ import {
   SiBootstrap,
   SiNodedotjs,
   SiExpress,
-  SiMongodb,
   SiMysql,
   SiGit,
   SiGithub,
   SiVercel,
-  SiDocker,
   SiOpenai,
   SiRailway,
 } from "react-icons/si";
@@ -27,7 +25,6 @@ import {
   FaCode,
   FaLaptopCode,
   FaServer,
-  FaRocket,
 } from "react-icons/fa";
 import { TbWorldWww } from "react-icons/tb";
 
@@ -97,15 +94,6 @@ const skillsList = [
       { icon: <TbWorldWww />, name: "Custom Domain Setup" },
     ],
   },
-  // {
-  //   title: "Learning",
-  //   categoryIcon: <FaRocket />,
-  //   items: [
-  //     { icon: <SiMongodb />, name: "MongoDB" },
-  //     { icon: <SiDocker />, name: "Docker" },
-  //     { icon: <FaTools />, name: "Full MERN Stack Deep Dive" },
-  //   ],
-  // },
 ];
 
 export default skillsList;
