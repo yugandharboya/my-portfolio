@@ -1,26 +1,76 @@
-:root {
-  --text-primary: #8892b0;
-  --header-primary: white;
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --text-primary: #8892b0;
+    --header-primary: #ffffff;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: #0a192f;
+    color: #8892b0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+    word-break: normal;
+    overflow-wrap: break-word;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0a192f;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #1e293b;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #64ffda;
+  }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+@layer utilities {
+  .text-fluid-h1 {
+    font-size: clamp(1.875rem, 5vw, 4.25rem);
+    line-height: 1.1;
+  }
+
+  .text-fluid-h2 {
+    font-size: clamp(1.35rem, 3.8vw, 3rem);
+    line-height: 1.25;
+  }
+
+  .text-fluid-section {
+    font-size: clamp(1.25rem, 3vw, 2.125rem);
+    line-height: 1.3;
+  }
+
+  .text-fluid-card-title {
+    font-size: clamp(1.05rem, 2.2vw, 1.35rem);
+    line-height: 1.35;
+  }
+
+  .text-fluid-body {
+    font-size: clamp(0.875rem, 1.5vw, 1.125rem);
+    line-height: 1.65;
+  }
+
+  .text-fluid-sub {
+    font-size: clamp(0.75rem, 1.2vw, 0.95rem);
+    line-height: 1.5;
+  }
 }
-html,
-body,
-#root {
-  height: 100%;
-}
-p {
-  color: var(--text-primary);
-}
-body {
-  font-family: system-ui, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-}
-html {
-  scroll-behavior: smooth;
-}
+
+
+
+

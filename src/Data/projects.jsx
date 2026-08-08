@@ -1,5 +1,19 @@
 const projects = [
   {
+    title: "PestGuard Pro",
+    description:
+      "A full-stack pest control management system featuring automated WhatsApp follow-up reminders, customer directory, service history tracking, and analytics.",
+    tech: ["React.js", "Node.js", "Express.js", "MySQL", "REST APIs", "JWT", "WhatsApp API"],
+    live: "https://pest-guard-pro-froentend.vercel.app/",
+    git: "https://github.com/yugandharboya/PestGuardPro-froentend",
+    features: [
+      "Customer directory with property category filtering and multi-select bulk WhatsApp messaging",
+      "Automated background scheduler for daily follow-up reminders and custom message templates",
+      "Service logging with auto-calculation of next reminder dates and customer profile timelines",
+      "JWT-authenticated admin portal with automated MySQL database migrations and seeding",
+    ],
+  },
+  {
     title: "VTouch Media (Freelance)",
     description:
       "A modern business website for a digital media agency to showcase services and enable seamless client communication.",
@@ -19,7 +33,7 @@ const projects = [
     description:
       "A full-stack SaaS application for managing personal income and expenses with secure user authentication.",
     tech: ["React.js", "Node.js", "Express.js", "SQLite", "REST APIs", "JWT"],
-    live: "https://expense-tracker-froentend.vercel.app",
+    live: "https://expense-tracker-froentend.vercel.app/",
     git: "https://github.com/yugandharboya/ExpenseTracker-Froentend",
     features: [
       "User authentication and authorization using JWT",
@@ -34,7 +48,7 @@ const projects = [
     description:
       "A full-stack SaaS HRMS platform for managing employees, teams, and organizational data efficiently.",
     tech: ["React.js", "Node.js", "Express.js", "REST APIs", "JWT"],
-    live: "https://hrms-froentend.vercel.app",
+    live: "https://hrms-froentend.vercel.app/",
     git: "https://github.com/yugandharboya/HRMS-froentend",
     features: [
       "Organization-based user registration and role management",
