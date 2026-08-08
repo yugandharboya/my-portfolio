@@ -44,13 +44,13 @@ const HeroCard = () => {
             <span className="hero-name-inline">Yugandhar Boya</span>
           </p>
           <span className="hero-hire-badge">
-            Gen AI Instructor @ NextWave
+            Gen AI Instructor @ NxtWave
           </span>
         </div>
       </div>
 
       <h1 className="hero-promoted-headline text-fluid-h1">
-        Gen AI Instructor at NextWave, training engineering students in Generative AI and full-stack development.
+        Gen AI Instructor at NxtWave, training engineering students in Generative AI and full-stack development.
       </h1>
 
       <p className="hero-description text-fluid-body">
