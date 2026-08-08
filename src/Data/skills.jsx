@@ -14,6 +14,7 @@ import {
   SiVercel,
   SiDocker,
   SiOpenai,
+  SiRailway,
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 import {
@@ -74,7 +75,7 @@ const skillsList = [
   {
     title: "Database",
     categoryIcon: <FaDatabase />,
-    items: [{ icon: <SiMysql />, name: "SQL" }],
+    items: [{ icon: <SiMysql />, name: "MYSQL" }],
   },
   {
     title: "Tools",
@@ -92,18 +93,19 @@ const skillsList = [
     items: [
       { icon: <SiVercel />, name: "Vercel" },
       { icon: <TbWorldWww />, name: "Render" },
+      { icon: <SiRailway />, name: "Railway" },
       { icon: <TbWorldWww />, name: "Custom Domain Setup" },
     ],
   },
-  {
-    title: "Learning",
-    categoryIcon: <FaRocket />,
-    items: [
-      { icon: <SiMongodb />, name: "MongoDB" },
-      { icon: <SiDocker />, name: "Docker" },
-      { icon: <FaTools />, name: "Full MERN Stack Deep Dive" },
-    ],
-  },
+  // {
+  //   title: "Learning",
+  //   categoryIcon: <FaRocket />,
+  //   items: [
+  //     { icon: <SiMongodb />, name: "MongoDB" },
+  //     { icon: <SiDocker />, name: "Docker" },
+  //     { icon: <FaTools />, name: "Full MERN Stack Deep Dive" },
+  //   ],
+  // },
 ];
 
 export default skillsList;
