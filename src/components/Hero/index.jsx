@@ -1,3 +1,5 @@
+import "./Hero.css";
+
 const HeroCard = () => {
   const scrollToProjects = () => {
     const element = document.getElementById("projects");
@@ -24,53 +26,48 @@ const HeroCard = () => {
   };
 
   return (
-    <section
-      className="w-full flex flex-col justify-center min-h-[calc(100vh-80px)] py-8 sm:py-12 md:py-16 gap-4 sm:gap-6 min-w-0"
-      id="hero"
-    >
-      <div className="flex items-center gap-4 mb-2 min-w-0">
-        <div className="relative w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-full overflow-hidden border-2 border-[#64ffda] shadow-xl shadow-[#64ffda]/10 flex-shrink-0">
+    <section className="hero-section" id="hero">
+      <div className="hero-profile-row">
+        <div className="hero-avatar-container">
           <img
             src="/myProfile.JPG"
             alt="Yugandhar Boya"
-            className="w-full h-full object-cover aspect-square"
+            className="hero-avatar-img"
           />
         </div>
-        <div className="flex flex-col min-w-0">
-          <p className="font-mono text-sm sm:text-base text-[#64ffda] tracking-wide break-normal">
+        <div className="hero-greeting-box">
+          <p className="hero-greeting-text">
             Hi, my name is
           </p>
-          <span className="inline-block px-3 py-1 text-xs font-mono bg-[#112240] text-[#64ffda] rounded-full border border-[#233554] w-fit mt-1 whitespace-nowrap">
+          <span className="hero-hire-badge">
             Available for Hire 🚀
           </span>
         </div>
       </div>
 
-      <h1 className="text-fluid-h1 font-extrabold text-[#e6f1ff] tracking-tight min-w-0 break-normal">
+      <h1 className="hero-title text-fluid-h1">
         Yugandhar Boya.
       </h1>
 
-      <h2 className="text-fluid-h2 font-bold text-[#8892b0] tracking-tight min-w-0 break-normal">
-        I build scalable full-stack web applications.
+      <h2 className="hero-subtitle text-fluid-h2">
+        Gen AI Instructor at NextWave, training engineering students in Generative AI and full-stack development.
       </h2>
 
-      <p className="text-fluid-body text-[#8892b0] max-w-2xl leading-relaxed mt-2 min-w-0 break-normal">
-        I’m a full-stack web developer with hands-on experience building
-        production-ready applications using the MERN stack. I’ve developed real
-        projects including business websites, SaaS platforms, and dynamic web applications with REST APIs, authentication, and responsive UI.
+      <p className="hero-description text-fluid-body">
+        I’m a full-stack web developer and Generative AI Instructor passionate about building production-grade web applications and training the next generation of engineers in AI and modern software development.
       </p>
 
-      <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mt-4 sm:mt-6 min-w-0">
+      <div className="hero-actions-group">
         <button
           onClick={scrollToProjects}
-          className="border-2 border-[#64ffda] text-[#64ffda] hover:bg-[#64ffda]/10 px-6 py-3 rounded font-mono text-sm font-semibold tracking-wide transition-all duration-200 min-h-[44px] flex items-center justify-center cursor-pointer shadow-lg shadow-[#64ffda]/5 hover:-translate-y-0.5"
+          className="hero-btn-primary"
         >
           Check out my work!
         </button>
 
         <button
           onClick={scrollToContact}
-          className="bg-[#112240] hover:bg-[#1d3557] text-[#ccd6f6] border border-[#233554] hover:border-[#64ffda] px-6 py-3 rounded font-mono text-sm tracking-wide transition-all duration-200 min-h-[44px] flex items-center justify-center cursor-pointer"
+          className="hero-btn-secondary"
         >
           Get In Touch
         </button>

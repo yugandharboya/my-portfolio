@@ -13,12 +13,24 @@ import {
   SiGithub,
   SiVercel,
   SiDocker,
+  SiOpenai,
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
-import { FaTools } from "react-icons/fa";
+import { FaTools, FaBrain, FaRobot, FaChalkboardTeacher, FaDatabase, FaCogs } from "react-icons/fa";
 import { TbWorldWww } from "react-icons/tb";
 
 const skillsList = [
+  {
+    title: "Generative AI & Teaching",
+    items: [
+      { icon: <FaBrain />, name: "Prompt Engineering" },
+      { icon: <FaRobot />, name: "LLM Fundamentals (GPT, Claude, Gemini)" },
+      { icon: <FaCogs />, name: "LangChain / RAG" },
+      { icon: <SiOpenai />, name: "OpenAI API" },
+      { icon: <FaDatabase />, name: "Vector DBs" },
+      { icon: <FaChalkboardTeacher />, name: "Curriculum Design" },
+    ],
+  },
   {
     title: "Languages",
     items: [
