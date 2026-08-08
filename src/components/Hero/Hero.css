@@ -4,16 +4,16 @@
   flex-direction: column;
   justify-content: center;
   min-height: calc(100vh - 80px);
-  padding-top: 2rem;
+  padding-top: 1rem;
   padding-bottom: 2rem;
-  gap: 1rem;
+  gap: 1.25rem;
   min-width: 0;
   max-width: 100%;
 }
 
 @media (min-width: 640px) {
   .hero-section {
-    padding-top: 3rem;
+    padding-top: 2rem;
     padding-bottom: 3rem;
     gap: 1.5rem;
   }
@@ -30,7 +30,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
   min-width: 0;
 }
 
@@ -69,21 +69,28 @@
 .hero-greeting-box {
   display: flex;
   flex-direction: column;
+  gap: 0.35rem;
   min-width: 0;
 }
 
 .hero-greeting-text {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 0.875rem;
+  font-size: clamp(0.95rem, 1.8vw, 1.25rem);
   color: #64ffda;
   letter-spacing: 0.025em;
   word-break: normal;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem;
 }
 
-@media (min-width: 640px) {
-  .hero-greeting-text {
-    font-size: 1rem;
-  }
+.hero-name-inline {
+  color: #e6f1ff;
+  font-weight: 800;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: clamp(1.2rem, 2.5vw, 1.75rem);
+  letter-spacing: -0.01em;
 }
 
 .hero-hire-badge {
@@ -96,29 +103,21 @@
   border-radius: 9999px;
   border: 1px solid #233554;
   width: fit-content;
-  margin-top: 0.25rem;
+  margin-top: 0.15rem;
   white-space: normal;
   word-break: normal;
 }
 
-.hero-title {
-  font-weight: 800;
+.hero-promoted-headline {
+  font-weight: 700;
   color: #e6f1ff;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.02em;
   min-width: 0;
   word-break: normal;
   overflow-wrap: break-word;
-}
-
-.hero-subtitle {
-  font-weight: 600;
-  color: #8892b0;
-  letter-spacing: -0.015em;
-  min-width: 0;
-  word-break: normal;
-  overflow-wrap: break-word;
-  max-width: 52rem;
-  line-height: 1.3;
+  max-width: 56rem;
+  line-height: 1.15;
+  margin-top: 0.5rem;
 }
 
 .hero-description {
@@ -136,7 +135,7 @@
   flex-direction: column;
   align-items: stretch;
   gap: 1rem;
-  margin-top: 1rem;
+  margin-top: 1.25rem;
   min-width: 0;
 }
 
@@ -144,7 +143,7 @@
   .hero-actions-group {
     flex-direction: row;
     align-items: center;
-    margin-top: 1.5rem;
+    margin-top: 1.75rem;
   }
 }
 

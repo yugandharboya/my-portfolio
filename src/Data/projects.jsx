@@ -6,7 +6,6 @@ const projects = [
     tech: ["Generative AI", "LLMs", "LangChain", "Prompt Engineering", "RAG", "React.js", "Python"],
     featured: true,
     features: [
-      "Trained 500+ engineering students in Generative AI tools, prompt engineering, and LLM application development",
       "Developed hands-on curriculum and project templates combining MERN stack with OpenAI APIs and Vector DBs",
       "Mentored student teams in building production-ready AI SaaS projects and industry-standard portfolios",
     ],
@@ -43,7 +42,7 @@ const projects = [
     title: "Personal Expense Tracker",
     description:
       "A full-stack SaaS application for managing personal income and expenses with secure user authentication.",
-    tech: ["React.js", "Node.js", "Express.js", "SQLite", "REST APIs", "JWT"],
+    tech: ["React.js", "Node.js", "Express.js", "MySql", "REST APIs", "JWT"],
     live: "https://expense-tracker-froentend.vercel.app/",
     git: "https://github.com/yugandharboya/ExpenseTracker-Froentend",
     features: [

@@ -37,7 +37,8 @@ const HeroCard = () => {
         </div>
         <div className="hero-greeting-box">
           <p className="hero-greeting-text">
-            Hi, my name is
+            Hi, my name is{" "}
+            <span className="hero-name-inline">Yugandhar Boya</span>
           </p>
           <span className="hero-hire-badge">
             Gen AI Instructor @ NextWave
@@ -45,13 +46,9 @@ const HeroCard = () => {
         </div>
       </div>
 
-      <h1 className="hero-title text-fluid-h1">
-        Yugandhar Boya.
-      </h1>
-
-      <h2 className="hero-subtitle text-fluid-h2">
+      <h1 className="hero-promoted-headline text-fluid-h1">
         Gen AI Instructor at NextWave, training engineering students in Generative AI and full-stack development.
-      </h2>
+      </h1>
 
       <p className="hero-description text-fluid-body">
         I’m a full-stack web developer and Generative AI Instructor passionate about building production-grade web applications and training the next generation of engineers in AI and modern software development.
